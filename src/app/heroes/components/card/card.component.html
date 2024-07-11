@@ -4,8 +4,6 @@
     <mat-card-subtitle> {{ hero.alter_ego }} </mat-card-subtitle>
   </mat-card-header>
 
-  <!-- TODO: imagen -->
-
    <img mat-card-image [src]="hero | heroImage" [alt]="hero.superhero">
 
   <mat-card-content class="mt-2">
@@ -24,7 +22,7 @@
   <mat-card-actions>
     <button mat-button mat-raised color="primary" [routerLink]="['/heroes/edit', hero.id]">
       <mat-icon>edit</mat-icon>
-      Editar
+      Edit
     </button>
   </mat-card-actions>
 
